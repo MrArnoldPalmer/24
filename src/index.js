@@ -32,6 +32,15 @@ function initMap() {
       fillOpacity: 0.8,
       map: map
     });
+
+    let mapLabel = new MapLabel({
+      text: `${748 * zip.HCF} Gallons`,
+      position: new google.maps.LatLng(zip.latitude, zip.longitude),
+      map: map,
+      fontSize: 20,
+      align: 'center',
+      zIndex: 1000
+    });
   }
 }
 
